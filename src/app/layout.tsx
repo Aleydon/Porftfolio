@@ -6,12 +6,13 @@ import './globals.css';
 
 const roboto = Roboto({
   variable: '--font-geist-sans',
-  weight: ['100', '300', '400', '500', '700', '900']
+  weight: ['100', '300', '400', '500', '700', '900'],
+  subsets: ['latin']
 });
 
 export const metadata: Metadata = {
-  title: 'Next 15',
-  description: 'Next 15 Template'
+  title: 'Aleydon',
+  description: 'Roberto Aleydon Portfolio'
 };
 
 export default function RootLayout({
