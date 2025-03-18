@@ -13,11 +13,11 @@ export function Hero() {
           </h2>
           <p className="text-white">Web and Mobile Developer</p>
 
-          <div>Techs</div>
+          <div className="text-[#7562e0] text-2xl">Techs</div>
           <div className="text-white">Contact</div>
         </div>
         <Image
-          className="rounded-full md:rounded-md mb-2"
+          className="rounded-full md:rounded-md mb-2 mt-5"
           src={Me}
           alt="Roberto Aleydon"
           width={300}

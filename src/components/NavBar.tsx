@@ -38,10 +38,10 @@ export function NavBar() {
       {/* Navigation Menu  */}
       <div
         className={`${isOpen ? 'block' : 'hidden'} 
-        md:flex md:space-x-8 justify-center mt-4 md:mt-0 p-2.5`}
+        md:flex md:space-x-8 justify-center mt-4 md:mt-0 p-2.5 pb-7`}
       >
         <div
-          className="flex flex-col space-y-2  gap-4
+          className="flex flex-col space-y-2 gap-4 mb-5
           md:flex-row md:space-y-0 md:justify-between
         "
         >
