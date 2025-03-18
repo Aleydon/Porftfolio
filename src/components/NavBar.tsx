@@ -17,6 +17,8 @@ export function NavBar() {
       {/* Logo ou Título */}
       <div className="flex justify-between items-center">
         <Image src={Logo} alt="Logo" width={30} height={30} />
+        <h1 className="md:text-white md:px-4 hidden md:block">Aleydon</h1>
+
         {/* Botão Hamburger */}
         <button
           onClick={toggleMenu}
