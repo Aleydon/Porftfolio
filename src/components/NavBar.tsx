@@ -1,9 +1,11 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import Logo from '@/assets/logo.svg';
+import { NAV_LINKS } from '@/constants/navLinks';
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,12 +16,15 @@ export function NavBar() {
 
   return (
     <nav className="md:flex md:justify-between md:items-center p-4 bg-gray-800">
-      {/* Logo ou Título */}
+      {/* Logo and Title */}
       <div className="flex justify-between items-center">
-        <Image src={Logo} alt="Logo" width={30} height={30} />
-        <h1 className="md:text-white md:px-4 hidden md:block">Aleydon</h1>
-
-        {/* Botão Hamburger */}
+        <Link href="/">
+          <Image src={Logo} alt="Logo" width={30} height={30} />
+        </Link>
+        <Link href="/">
+          <h1 className="md:text-white md:px-4 hidden md:block">Aleydon</h1>
+        </Link>
+        {/* Hamburger Menu */}
         <button
           onClick={toggleMenu}
           className="text-white md:hidden flex flex-col items-center space-y-1"
@@ -30,7 +35,7 @@ export function NavBar() {
         </button>
       </div>
 
-      {/* Menu de Navegação */}
+      {/* Navigation Menu  */}
       <div
         className={`${isOpen ? 'block' : 'hidden'} 
         md:flex md:space-x-8 justify-center mt-4 md:mt-0 p-2.5`}
@@ -40,30 +45,15 @@ export function NavBar() {
           md:flex-row md:space-y-0 md:justify-between
         "
         >
-          <a
-            href="/"
-            className="text-white md:bg-green-500 hover:bg-green-400  md:rounded-md p-1 "
-          >
-            <h2 className="text-center">Home</h2>
-          </a>
-          <a
-            href="/about"
-            className="text-white md:bg-green-500 hover:bg-green-400 md:rounded-md p-1"
-          >
-            <h2 className="text-center">About</h2>
-          </a>
-          <a
-            href="/services"
-            className="text-white md:bg-green-500 hover:bg-green-400 md:rounded-md p-1"
-          >
-            <h2 className="text-center">Projects</h2>
-          </a>
-          <a
-            href="/contact"
-            className="text-white md:bg-green-500 hover:bg-green-400 md:rounded-md p-1"
-          >
-            <h2 className="text-center">Contact</h2>
-          </a>
+          {NAV_LINKS.map(link => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className="text-white md:bg-[#7562e0] hover:bg-purple-700 md:rounded-md p-1"
+            >
+              <h2 className="text-center">{link.name}</h2>
+            </Link>
+          ))}
         </div>
       </div>
     </nav>

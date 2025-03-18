@@ -4,25 +4,26 @@ import Me from '@/assets/me.jpeg';
 
 export function Hero() {
   return (
-    <div
-      className="flex flex-col w-full items-center justify-center
-        gap-4 md:flex-row md:justify-between md:items-center md:gap-8"
-    >
-      <div>
-        <h2 className="md:text-2xl">
-          Hi, I&apos;m Roberto Aleydon. <br /> Web and Mobile Developer
-        </h2>
-      </div>
+    <section className="flex flex-col items-center justify-end  w-full h-[400px] bg-gray-800">
+      <div className="container flex flex-col-reverse items-start justify-between md:flex-row pb-10 w-[40%] gap-2">
+        <div className="w-full md:max-w-[600px] text-center">
+          <p className="text-[#7562e0] text-2xl">Hello i&apos;m </p>
+          <h2 className="text-3xl font-semibold mt-1 text-white">
+            Roberto Aleydon
+          </h2>
+          <p className="text-white">Web and Mobile Developer</p>
 
-      <div>
+          <div>Techs</div>
+          <div className="text-white">Contact</div>
+        </div>
         <Image
-          className="rounded-full md:w-32 md:h-32 "
+          className="rounded-full md:rounded-md mb-2"
           src={Me}
-          alt="Vercel Logo"
-          width={100}
-          height={24}
+          alt="Roberto Aleydon"
+          width={300}
+          height={300}
         />
       </div>
-    </div>
+    </section>
   );
 }

@@ -11,7 +11,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'Aleydon',
+  title: 'Roberto Aleydon',
   description: 'Roberto Aleydon Portfolio'
 };
 
