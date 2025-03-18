@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import Logo from '@/assets/logo.svg';
+import Link from 'next/link';
+import { NAV_LINKS } from '@/constants/navLinks';
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,30 +42,15 @@ export function NavBar() {
           md:flex-row md:space-y-0 md:justify-between
         "
         >
-          <a
-            href="/"
-            className="text-white md:bg-green-500 hover:bg-green-400  md:rounded-md p-1 "
-          >
-            <h2 className="text-center">Home</h2>
-          </a>
-          <a
-            href="/about"
-            className="text-white md:bg-green-500 hover:bg-green-400 md:rounded-md p-1"
-          >
-            <h2 className="text-center">About</h2>
-          </a>
-          <a
-            href="/services"
-            className="text-white md:bg-green-500 hover:bg-green-400 md:rounded-md p-1"
-          >
-            <h2 className="text-center">Projects</h2>
-          </a>
-          <a
-            href="/contact"
-            className="text-white md:bg-green-500 hover:bg-green-400 md:rounded-md p-1"
-          >
-            <h2 className="text-center">Contact</h2>
-          </a>
+          {NAV_LINKS.map(link => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className="text-white md:bg-green-500 hover:bg-green-400 md:rounded-md p-1"
+            >
+              <h2 className="text-center">{link.name}</h2>
+            </Link>
+          ))}
         </div>
       </div>
     </nav>

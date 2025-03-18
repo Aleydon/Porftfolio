@@ -10,8 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'Next 15',
-  description: 'Next 15 Template'
+  title: 'Roberto Aleydon',
+  description: 'Roberto Aleydon Portfolio'
 };
 
 export default function RootLayout({
