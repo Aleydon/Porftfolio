@@ -1,8 +1,11 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
-export default function NavBar() {
+import Logo from '@/assets/logo.svg';
+
+export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,7 +16,8 @@ export default function NavBar() {
     <nav className="md:flex md:justify-between md:items-center p-4 bg-gray-800">
       {/* Logo ou Título */}
       <div className="flex justify-between items-center">
-        <div className="text-white font-bold">Logo</div>
+        <Image src={Logo} alt="Logo" width={30} height={30} />
+        <h1 className="md:text-white md:px-4 hidden md:block">Aleydon</h1>
 
         {/* Botão Hamburger */}
         <button

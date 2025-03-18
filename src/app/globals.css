@@ -3,10 +3,9 @@
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --dark-bg: #1A1A29;
-  --secondary-color: #7562E0
+  --dark-bg: #1a1a29;
+  --secondary-color: #7562e0;
 }
-
 
 @layer base {
   *,

@@ -1,5 +1,11 @@
-import NavBar from '@/components/NavBar';
+import { NavBar } from '@/components/NavBar';
+import Home from './Home/page';
 
 export default function Page() {
-  return <NavBar />;
+  return (
+    <>
+      <NavBar />
+      <Home />
+    </>
+  );
 }
