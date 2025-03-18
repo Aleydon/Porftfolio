@@ -18,9 +18,12 @@ export function NavBar() {
     <nav className="md:flex md:justify-between md:items-center p-4 bg-gray-800">
       {/* Logo ou Título */}
       <div className="flex justify-between items-center">
-        <Image src={Logo} alt="Logo" width={30} height={30} />
-        <h1 className="md:text-white md:px-4 hidden md:block">Aleydon</h1>
-
+        <Link href="/">
+          <Image src={Logo} alt="Logo" width={30} height={30} />
+        </Link>
+        <Link href="/">
+          <h1 className="md:text-white md:px-4 hidden md:block">Aleydon</h1>
+        </Link>
         {/* Botão Hamburger */}
         <button
           onClick={toggleMenu}
@@ -46,7 +49,7 @@ export function NavBar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-white md:bg-green-500 hover:bg-green-400 md:rounded-md p-1"
+              className="text-white md:bg-[#7562e0] hover:bg-purple-700 md:rounded-md p-1"
             >
               <h2 className="text-center">{link.name}</h2>
             </Link>
