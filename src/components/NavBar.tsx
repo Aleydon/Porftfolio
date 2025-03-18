@@ -1,10 +1,10 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import Logo from '@/assets/logo.svg';
-import Link from 'next/link';
 import { NAV_LINKS } from '@/constants/navLinks';
 
 export function NavBar() {
@@ -16,7 +16,7 @@ export function NavBar() {
 
   return (
     <nav className="md:flex md:justify-between md:items-center p-4 bg-gray-800">
-      {/* Logo ou Título */}
+      {/* Logo and Title */}
       <div className="flex justify-between items-center">
         <Link href="/">
           <Image src={Logo} alt="Logo" width={30} height={30} />
@@ -24,7 +24,7 @@ export function NavBar() {
         <Link href="/">
           <h1 className="md:text-white md:px-4 hidden md:block">Aleydon</h1>
         </Link>
-        {/* Botão Hamburger */}
+        {/* Hamburger Menu */}
         <button
           onClick={toggleMenu}
           className="text-white md:hidden flex flex-col items-center space-y-1"
@@ -35,7 +35,7 @@ export function NavBar() {
         </button>
       </div>
 
-      {/* Menu de Navegação */}
+      {/* Navigation Menu  */}
       <div
         className={`${isOpen ? 'block' : 'hidden'} 
         md:flex md:space-x-8 justify-center mt-4 md:mt-0 p-2.5`}

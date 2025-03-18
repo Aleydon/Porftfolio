@@ -13,7 +13,7 @@ export function Hero() {
           </h2>
           <p className="text-white">Web and Mobile Developer</p>
 
-          <div className="text-[#7562e0]">Techs</div>
+          <div>Techs</div>
           <div className="text-white">Contact</div>
         </div>
         <Image
