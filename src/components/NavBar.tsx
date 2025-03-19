@@ -25,6 +25,7 @@ export function NavBar() {
           <h1 className="md:text-white md:px-4 hidden md:block">Aleydon</h1>
         </Link>
         {/* Hamburger Menu */}
+
         <button
           onClick={toggleMenu}
           className="text-white md:hidden flex flex-col items-center space-y-1"
@@ -38,10 +39,10 @@ export function NavBar() {
       {/* Navigation Menu  */}
       <div
         className={`${isOpen ? 'block' : 'hidden'} 
-        md:flex md:space-x-8 justify-center mt-4 md:mt-0 p-2.5`}
+        md:flex md:space-x-8 justify-center mt-4 md:mt-0 p-2.5 pb-7`}
       >
         <div
-          className="flex flex-col space-y-2  gap-4
+          className="flex flex-col space-y-2 gap-4 mb-5
           md:flex-row md:space-y-0 md:justify-between
         "
         >
@@ -49,7 +50,8 @@ export function NavBar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-white md:bg-[#7562e0] hover:bg-purple-700 md:rounded-md p-1"
+              className="text-white md:border-b-2 md:border-[#7562e0]  md:hover:bg-[#6b57e0] 
+               md:rounded-sm p-1 transition-all duration-200"
             >
               <h2 className="text-center">{link.name}</h2>
             </Link>
