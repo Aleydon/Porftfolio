@@ -6,7 +6,7 @@ import { DownloadCV } from './DownloadCV';
 
 export function Hero() {
   return (
-    <section className="flex flex-col items-center justify-end  w-full h-[400px] bg-gray-800">
+    <section className="flex flex-col items-center justify-end  w-full h-[610px]md:h-[400px] bg-gray-800">
       <div className="container flex flex-col-reverse items-start justify-between md:flex-row pb-10 w-[40%] gap-2">
         <div className="flex-col w-full md:max-w-[600px] text-center">
           <p className="text-[#7562e0] text-2xl">Hello i&apos;m </p>
