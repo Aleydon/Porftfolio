@@ -8,19 +8,19 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-end  w-full h-[610px] lg:h-[400px] bg-gray-800"
+      className="flex h-[610px] w-full flex-col items-center justify-end bg-gray-800 lg:h-[400px]"
     >
-      <div className="container flex flex-col-reverse items-start justify-between lg:flex-row pb-10 w-[50%] gap-2">
-        <div className="flex-col w-full lg:max-w-[600px] text-center">
-          <p className="text-[#7562e0] text-2xl">Hello i&apos;m </p>
-          <h2 className="text-3xl font-semibold mt-1 text-white">
+      <div className="container flex w-[50%] flex-col-reverse items-start justify-between gap-2 pb-10 lg:flex-row">
+        <div className="w-full flex-col text-center lg:max-w-[600px]">
+          <p className="text-2xl text-[#7562e0]">Hello i&apos;m </p>
+          <h2 className="mt-1 text-3xl font-semibold text-white">
             Roberto Aleydon
           </h2>
           <p className="text-white">
             Full Stack <span className="block"></span>Web and Mobile Developer
           </p>
 
-          <div className="text-[#7562e0] text-2xl">
+          <div className="text-2xl text-[#7562e0]">
             Techs
             <div className="my-2">
               <ul className="flex flex-wrap justify-center gap-2">
@@ -32,17 +32,14 @@ export function Hero() {
               </ul>
             </div>
           </div>
-          <div
-            className="flex justify-center items-center bg-[#7562e0] p-2
-            rounded-md lg:cursor-pointer hover:bg-[#6b57e0] transition-all duration-200"
-          >
+          <div className="flex items-center justify-center rounded-md bg-[#7562e0] p-2 transition-all duration-200 hover:bg-[#6b57e0] lg:cursor-pointer">
             <DownloadCV />
           </div>
         </div>
 
         <div>
           <Image
-            className="rounded-full lg:rounded-md mb-2 mt-5"
+            className="mt-5 mb-2 rounded-full lg:rounded-md"
             src={Me}
             alt="Roberto Aleydon"
             width={300}

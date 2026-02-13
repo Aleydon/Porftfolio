@@ -1,20 +1,13 @@
-import Home from './Home/page';
-import About from './About/page';
-import Projects from './Projects/page';
-import PortfolioFooter from './PortfolioFooter/page';
-import Contact from './Contact/page';
+import FeaturedWorksSection from '@/components/sections/FeaturedWorksSection';
+import HeroSection from '@/components/sections/HeroSection';
+import RecentPostsSection from '@/components/sections/RecentPostsSection';
 
-import { NavBar } from '@/components/NavBar';
-
-export default function Page() {
+export default function HomePage() {
   return (
-    <>
-      <NavBar />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
-      <PortfolioFooter />
-    </>
+    <main>
+      <HeroSection />
+      <RecentPostsSection />
+      <FeaturedWorksSection />
+    </main>
   );
 }

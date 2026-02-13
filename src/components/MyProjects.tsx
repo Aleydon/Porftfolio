@@ -3,7 +3,7 @@ export function MyProjects() {
   return (
     <div
       id="projects"
-      className="flex justify-center items-center bg-blue-400 h-[600px]"
+      className="flex h-[600px] items-center justify-center bg-blue-400"
     >
       <div>Projects</div>
       <div>

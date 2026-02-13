@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <div
       id="projects"
-      className="flex justify-center items-center bg-emerald-400 h-[60px]"
+      className="flex h-[60px] items-center justify-center bg-emerald-400"
     >
       <div>Footer</div>
     </div>
