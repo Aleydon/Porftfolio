@@ -4,11 +4,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Aleydon's Portfolio",
-  description: 'Portfolio of Roberto Aleydon',
+  title: 'Roberto Aleydon — Portfolio',
+  description: 'Full Stack developer Portfolio of Roberto Aleydon.',
   openGraph: {
-    title: "Aleydon's Portfolio",
-    description: 'Portfolio of Roberto Aleydon',
+    title: 'Roberto Aleydon — Portfolio',
+    description: 'Full Stack developer Portfolio of Roberto Aleydon.',
     type: 'website'
   }
 };

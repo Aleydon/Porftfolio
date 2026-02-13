@@ -9,8 +9,8 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const HERO_DATA = {
-  name: 'Roberto Aleydon',
-  title: "Aleydon's Portfolio",
+  name: 'Roberto Aleydonn',
+  title: 'Aleydon',
   bio: 'A dedicated Full Stack Developer focused on building functional and responsive web applications. I enjoy tackling new challenges and transforming ideas into clean, working code while constantly expanding my technical toolkit.',
   resumeUrl: '/resume.pdf',
   avatarUrl: '/images/avatar.jpeg',

@@ -1,7 +1,7 @@
-import ProjectCard from '@/components/ui/ProjectCard';
-import SectionLabel from '@/components/ui/SectionLabel';
-import Container from '@/components/ui/Container';
 import { PROJECTS } from '@/lib/data';
+import Container from '../ui/Container';
+import ProjectCard from '../ui/ProjectCard';
+import SectionLabel from '../ui/SectionLabel';
 
 export default function FeaturedWorksSection() {
   return (

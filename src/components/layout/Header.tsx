@@ -1,12 +1,13 @@
 'use client';
 
-import { NAV_ITEMS } from '@/lib/data';
-import { cn } from '@/lib/utils';
-import Link from 'next/link';
 import { useState } from 'react';
+import Link from 'next/link';
+import { cn } from '@/lib/utils';
+import { NAV_ITEMS } from '@/lib/data';
 
+// Only "Works", "Blog", "Contact" show in the desktop header per the design
 const DESKTOP_NAV = NAV_ITEMS.filter(item =>
-  ['Home', 'Work', 'Contact'].includes(item.label)
+  ['Work', 'Blog', 'Contact'].includes(item.label)
 );
 
 export default function Header() {
@@ -21,7 +22,7 @@ export default function Header() {
             href="/"
             className="font-display hidden text-lg font-semibold text-[#1a1f3a] transition-colors hover:text-[#FF5E5B] md:block"
           >
-            Aleydon
+            John.
           </Link>
 
           {/* Desktop navigation */}
@@ -111,7 +112,7 @@ export default function Header() {
                 onClick={() => {
                   setIsOpen(false);
                 }}
-                className="block rounded-lg px-4 py-3 text-lg font-medium text-[#1a1f3a] transition-colors duration-150 hover:bg-[#0da170] hover:text-[#4de7b7]"
+                className="block rounded-lg px-4 py-3 text-lg font-medium text-[#1a1f3a] transition-colors duration-150 hover:bg-[#f5f6f8] hover:text-[#FF5E5B]"
               >
                 {item.label}
               </Link>
@@ -120,7 +121,7 @@ export default function Header() {
         </ul>
 
         <div className="mt-auto text-sm text-[#6b7280]">
-          © {new Date().getFullYear()} Aleydon
+          © {new Date().getFullYear()} John Doe
         </div>
       </nav>
     </>

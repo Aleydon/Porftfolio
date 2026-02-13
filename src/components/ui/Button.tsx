@@ -1,8 +1,8 @@
 import { cn } from '@/lib/utils';
 import type {
-  AnchorHTMLAttributes,
+  ReactNode,
   ButtonHTMLAttributes,
-  ReactNode
+  AnchorHTMLAttributes
 } from 'react';
 
 type ButtonVariant = 'primary' | 'secondary' | 'ghost';
@@ -25,7 +25,7 @@ type ButtonProps = ButtonAsButton | ButtonAsAnchor;
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    'bg-[#0da170] text-white shadow-[0_4px_16px_0_rgba(16, 185, 129, 1)] hover:bg-[#065f46] hover:shadow-[0_6px_20px_0_rgba(11, 138, 96, 1)] active:scale-[0.97]',
+    'bg-[#FF5E5B] text-white shadow-[0_4px_16px_0_rgba(255,94,91,0.35)] hover:bg-[#e04845] hover:shadow-[0_6px_20px_0_rgba(255,94,91,0.45)] active:scale-[0.97]',
   secondary:
     'bg-white text-[#1a1f3a] border border-[#e8eaed] hover:border-[#FF5E5B] hover:text-[#FF5E5B] active:scale-[0.97]',
   ghost: 'text-[#1a1f3a] hover:bg-black/5 active:scale-[0.97]'

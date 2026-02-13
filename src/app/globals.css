@@ -1,14 +1,5 @@
 @import 'tailwindcss';
 
-:root {
-  --dark: #1a1a29;
-  --purple: #7562e0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 @theme {
   --font-sans: 'DM Sans', system-ui, sans-serif;
   --font-display: 'Fraunces', Georgia, serif;
