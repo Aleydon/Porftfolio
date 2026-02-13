@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
 import { NAV_ITEMS } from '@/lib/data';
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
+import { useState } from 'react';
 
 // Only "Works", "Blog", "Contact" show in the desktop header per the design
 const DESKTOP_NAV = NAV_ITEMS.filter(item =>
@@ -22,7 +22,7 @@ export default function Header() {
             href="/"
             className="font-display hidden text-lg font-semibold text-[#1a1f3a] transition-colors hover:text-[#FF5E5B] md:block"
           >
-            John.
+            Aleydon
           </Link>
 
           {/* Desktop navigation */}

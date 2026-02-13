@@ -40,7 +40,7 @@ export default function HeroSection() {
 
           {/* ── Avatar ─────────────────────────────────── */}
           <div className="animate-scale-in flex-shrink-0 delay-300">
-            <div className="relative h-36 w-36 overflow-hidden rounded-full ring-4 shadow-2xl ring-[#e8eaed] sm:h-48 sm:w-48 md:h-60 md:w-60 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96">
+            <div className="bg-[#1a1f3a]shadow-2xl relative h-36 w-36 overflow-hidden rounded-full ring-[#e8eaed] sm:h-48 sm:w-48 md:h-60 md:w-60 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96">
               <Image
                 src={HERO_DATA.avatarUrl}
                 alt={HERO_DATA.avatarAlt}
