@@ -15,43 +15,37 @@ export function NavBar() {
   };
 
   return (
-    <nav className="md:flex md:justify-between md:items-center p-4 bg-gray-800">
+    <nav className="bg-gray-800 p-4 md:flex md:items-center md:justify-between">
       {/* Logo and Title */}
-      <div className="flex justify-between items-center">
+      <div className="flex items-center justify-between">
         <Link href="/">
           <Image src={Logo} alt="Logo" width={30} height={30} />
         </Link>
         <Link href="/">
-          <h1 className="md:text-white md:px-4 hidden md:block">Aleydon</h1>
+          <h1 className="hidden md:block md:px-4 md:text-white">Aleydon</h1>
         </Link>
         {/* Hamburger Menu */}
 
         <button
           onClick={toggleMenu}
-          className="text-white md:hidden flex flex-col items-center space-y-1"
+          className="flex flex-col items-center space-y-1 text-white md:hidden"
         >
-          <div className="w-6 h-0.5 bg-white"></div>
-          <div className="w-6 h-0.5 bg-white"></div>
-          <div className="w-6 h-0.5 bg-white"></div>
+          <div className="h-0.5 w-6 bg-white"></div>
+          <div className="h-0.5 w-6 bg-white"></div>
+          <div className="h-0.5 w-6 bg-white"></div>
         </button>
       </div>
 
       {/* Navigation Menu  */}
       <div
-        className={`${isOpen ? 'block' : 'hidden'} 
-        md:flex md:space-x-8 justify-center mt-4 md:mt-0 p-2.5 pb-7`}
+        className={`${isOpen ? 'block' : 'hidden'} mt-4 justify-center p-2.5 pb-7 md:mt-0 md:flex md:space-x-8`}
       >
-        <div
-          className="flex flex-col space-y-2 gap-4 mb-5
-          md:flex-row md:space-y-0 md:justify-between
-        "
-        >
+        <div className="mb-5 flex flex-col gap-4 space-y-2 md:flex-row md:justify-between md:space-y-0">
           {NAV_LINKS.map(link => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-white md:border-b-2 md:border-[#7562e0]  md:hover:bg-[#6b57e0] 
-               md:rounded-sm p-1 transition-all duration-200"
+              className="p-1 text-white transition-all duration-200 md:rounded-sm md:border-b-2 md:border-[#7562e0] md:hover:bg-[#6b57e0]"
             >
               <h2 className="text-center">{link.name}</h2>
             </Link>
