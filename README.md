@@ -1,4 +1,4 @@
-# Portfolio App — John Doe
+# Portfolio App — Roberto Aleydon
 
 Mobile-first portfolio layout built with **Next.js 14 (App Router)**, **TypeScript**, and **Tailwind CSS v4**.
 
