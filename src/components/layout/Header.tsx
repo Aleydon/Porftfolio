@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 // Only "Works", "Blog", "Contact" show in the desktop header per the design
 const DESKTOP_NAV = NAV_ITEMS.filter(item =>
-  ['Work', 'Blog', 'Contact'].includes(item.label)
+  ['Home', 'Projects', 'Contact'].includes(item.label)
 );
 
 export default function Header() {

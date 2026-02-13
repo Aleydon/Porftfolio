@@ -3,7 +3,7 @@ import type { NavItem, Post, Project, SocialLink } from '@/types';
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Work', href: '/work' },
+  { label: 'Projects', href: '/projects' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' }
 ];

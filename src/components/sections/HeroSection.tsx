@@ -15,7 +15,7 @@ export default function HeroSection() {
          * md+     → flex-row, text left / avatar right
          * xl+     → larger text, taller avatar
          */}
-        <div className="flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between md:gap-12 md:text-left lg:gap-16 xl:gap-20">
+        <div className="flex flex-col-reverse items-center gap-8 text-center md:flex-row md:items-center md:justify-between md:gap-12 md:text-left lg:gap-16 xl:gap-20">
           {/* ── Text block ─────────────────────────────── */}
           <div className="flex flex-col items-center md:max-w-lg md:items-start lg:max-w-xl xl:max-w-2xl">
             <h1
