@@ -41,13 +41,22 @@ export const POSTS: Post[] = [
 export const PROJECTS: Project[] = [
   {
     id: 'proj-1',
-    title: 'Designing Dashboards',
-    year: '2020',
-    tag: 'Dashboard',
-    excerpt:
-      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    imageUrl: '/images/dashboard-preview.svg',
-    imageAlt: 'Dashboard design preview'
+    title: 'Pomodoro Timer',
+    year: '2026',
+    tag: 'Productive',
+    excerpt: 'Pomodoro Technique website for time management',
+    imageUrl: '/images/chronos-pomodoro.png',
+    imageAlt: 'Pomodoro timer preview',
+    technologies: [
+      'React',
+      'Next.js',
+      'Tailwind',
+      'Css',
+      'Docker',
+      'PostgreSQL',
+      'GitHub',
+      'Jest'
+    ]
   },
   {
     id: 'proj-2',
@@ -90,5 +99,11 @@ export const SOCIAL_LINKS: SocialLink[] = [
     label: 'LinkedIn',
     href: 'https://linkedin.com',
     icon: 'linkedin'
+  },
+  {
+    id: 'gh',
+    label: 'GitHub',
+    href: 'https://github.com/Aleydon',
+    icon: 'github'
   }
 ];

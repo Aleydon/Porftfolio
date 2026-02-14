@@ -1,14 +1,16 @@
-import { SOCIAL_LINKS } from '@/lib/data';
 import FacebookIcon from '@/components/ui/icons/FacebookIcon';
+import { GitHubIcon } from '@/components/ui/icons/GitHubIcon';
 import InstagramIcon from '@/components/ui/icons/InstagramIcon';
-import TwitterIcon from '@/components/ui/icons/TwitterIcon';
 import LinkedInIcon from '@/components/ui/icons/LinkedInIcon';
+import TwitterIcon from '@/components/ui/icons/TwitterIcon';
+import { SOCIAL_LINKS } from '@/lib/data';
 
 const iconMap = {
   facebook: FacebookIcon,
   instagram: InstagramIcon,
   twitter: TwitterIcon,
-  linkedin: LinkedInIcon
+  linkedin: LinkedInIcon,
+  github: GitHubIcon
 } as const;
 
 export default function Footer() {

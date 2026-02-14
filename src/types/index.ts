@@ -15,13 +15,14 @@ export interface Project {
   excerpt: string;
   imageUrl: string;
   imageAlt: string;
+  technologies?: string[];
 }
 
 export interface SocialLink {
   id: string;
   label: string;
   href: string;
-  icon: 'facebook' | 'instagram' | 'twitter' | 'linkedin';
+  icon: 'facebook' | 'instagram' | 'twitter' | 'linkedin' | 'github';
 }
 
 export interface NavItem {
