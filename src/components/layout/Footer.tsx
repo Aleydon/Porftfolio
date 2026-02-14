@@ -15,7 +15,7 @@ const iconMap = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#e8eaed] bg-white">
+    <footer id="contact" className="border-t border-[#e8eaed] bg-white">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-5 px-5 py-10 sm:gap-6 sm:px-8 sm:py-12 lg:px-12 xl:px-16 2xl:px-20">
         <nav aria-label="Social media links">
           <ul className="flex items-center gap-5 sm:gap-7">

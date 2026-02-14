@@ -15,7 +15,10 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 right-0 left-0 z-50 border-b border-[#e8eaed]/60 bg-white/95 backdrop-blur-md">
+      <header
+        id="home"
+        className="fixed top-0 right-0 left-0 z-50 border-b border-[#e8eaed]/60 bg-white/95 backdrop-blur-md"
+      >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
           {/* Logo — visible md+ */}
           <Link

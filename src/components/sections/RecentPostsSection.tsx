@@ -1,11 +1,12 @@
+import Container from '@/components/ui/Container';
 import PostCard from '@/components/ui/PostCard';
 import SectionLabel from '@/components/ui/SectionLabel';
-import Container from '@/components/ui/Container';
 import { POSTS } from '@/lib/data';
 
 export default function RecentPostsSection() {
   return (
     <section
+      id="projects"
       aria-labelledby="recent-posts-heading"
       className="bg-[#eef2f7] py-12 sm:py-16 lg:py-20 2xl:py-24"
     >

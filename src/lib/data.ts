@@ -1,11 +1,9 @@
 import type { NavItem, Post, Project, SocialLink } from '@/types';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Projects', href: '/projects' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '/contact' }
+  { label: 'Home', href: '#home' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Contact', href: '#contact' }
 ];
 
 export const HERO_DATA = {

@@ -6,6 +6,7 @@ import SectionLabel from '../ui/SectionLabel';
 export default function FeaturedWorksSection() {
   return (
     <section
+      id="projects"
       aria-labelledby="featured-works-heading"
       className="bg-white py-12 sm:py-16 lg:py-20 2xl:py-24"
     >
